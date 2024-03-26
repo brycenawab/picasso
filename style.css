@@ -1,0 +1,146 @@
+.one{
+    display:grid;
+    grid-template-areas: "blockone blockthree blocktwo";
+    grid-auto-rows: 300px;
+   
+    padding:20px;
+    grid-gap: 5px;
+    grid-template: 100px / auto auto auto;
+}
+.blockone{
+    border: solid 1px aqua;
+    padding: 20px ;
+    background-color: aqua;
+}
+.blocktwo{
+    border: solid 1px aqua;
+    padding:20px;
+    background-color: aqua;
+}
+.blockthree{
+    border:solid 1px aqua;
+    padding:20px;
+    background-color: aqua;
+}
+
+.to{
+  display: grid;
+  padding:20px;
+  grid-template-areas: "blockfour";
+}
+
+.blockfour{
+    border:solid aqua;
+    grid-column-end: span 3;
+    background-color: aqua;
+}
+.inputs{
+    display:grid;
+    padding:20px;
+    border:solid;
+    background-color: lightgreen;
+}
+.blockone .dot{
+    display:flex;
+    height:25px;
+    width:25px;
+    background-color: pink;
+    border-radius:50%;
+    position: relative;
+    top:-40px;
+    left:60px;
+}
+.blockone .dot1{
+    display:flex;
+    height:25px;
+    width:25px;
+    background-color: pink;
+    border-radius:50%;
+    position:relative;
+    bottom:-20px;
+    left:60px
+}
+.blockone .dot2{
+    display:flex;
+    height:80px;
+    width:80px;
+    background-color: yellow;
+    border-radius:50%;
+    position:relative;
+    left:160px;
+    top:-80px
+}
+.blocktwo .dot3{
+    display:flex;
+    height:70px;
+    width:70px;
+    background-color: pink;
+    border-radius:50%;
+    position:relative;
+    bottom:-70px;
+    right:50px
+}
+.blocktwo .dot4{
+    display:flex;
+    height:25px;
+    width:25px;
+    background-color: pink;
+    border-radius:50%;
+    position:relative;
+    left:50px;
+    bottom:70px
+}
+.blockfour .arrow{
+    width:0px;
+    height:0px;
+    border-left:200px solid transparent;
+    border-right:200px solid transparent;
+    border-bottom:solid 200px green;
+    position: relative;
+    top:100px;
+    left:400px
+}
+.blockfour .arrow2{
+    width:0px;
+    height:0px;
+    border-left:200px solid transparent;
+    border-right:200px solid transparent;
+    border-bottom:solid 200px aquamarine;
+    position: relative;
+    top:-100px;
+    left:px
+}
+.pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: relative;
+    top:-300px;
+    left:70%
+  }
+  @media (min-width:1680px){
+    body{
+        width: 70%;
+    }
+  }
+
+  @media (min-width:768px )and (max-width:1024px) {
+    body{
+        width:90%;
+    }
+  }
+  @media screen and (max-width:768px) {
+    .body{
+        width: 95%;
+    }
+  }
+
+    
+  
